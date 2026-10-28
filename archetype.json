@@ -1,0 +1,5 @@
+{
+  "components": {
+    "css": ["app/globals.css"]
+  }
+}
