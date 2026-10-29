@@ -25,7 +25,7 @@ _variant: Pending · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -36,7 +36,7 @@ _variant: Pending · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *)::after {
@@ -44,7 +44,7 @@ _variant: Pending · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *):where(button) {
@@ -72,14 +72,14 @@ _variant: Pending · open: Open_
 }
 
 :where(.tool, .tool *):where(pre) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
 }
 
 :where(.tool, .tool *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -88,15 +88,15 @@ _variant: Pending · open: Open_
 .tool {
   margin-bottom: calc(0.25rem * 4);
   width: 450px;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -118,7 +118,7 @@ _variant: Pending · open: Open_
 .tool__icon {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
 }
 
 .tool__part {
@@ -136,18 +136,18 @@ _variant: Pending · open: Open_
   justify-content: center;
   gap: calc(0.25rem * 1.5);
   overflow: hidden;
-  border-radius: calc(infinity * 1px);
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.965 0 0);
+  background-color: var(--color-semantic-accent, #f3f3f3);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -162,7 +162,7 @@ _variant: Pending · open: Open_
 .tool__icon-3 {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: transform, translate, scale, rotate;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -171,7 +171,7 @@ _variant: Pending · open: Open_
 
 .tool__box-2 {
   padding: calc(0.25rem * 4);
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   outline-style: none;
   animation-name: enter;
   animation-duration: 150ms;
@@ -188,24 +188,24 @@ _variant: Pending · open: Open_
   line-height: calc(1 / 0.75);
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   text-transform: uppercase;
 }
 
 .tool__box-4 {
-  border-radius: calc(0.625rem - 2px);
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 50%, transparent);
+  border-radius: var(--radius-md, 8px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 50%, transparent);
 }
 
 .tool__box-5 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  background-color: oklch(0.985 0 0);
-  color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-primary-foreground, #fafafa);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .tool__box-6 {
@@ -221,7 +221,7 @@ _variant: Pending · open: Open_
 }
 
 .tool__box-8 {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -245,7 +245,7 @@ _variant: Pending · open: Closed_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -256,7 +256,7 @@ _variant: Pending · open: Closed_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *)::after {
@@ -264,7 +264,7 @@ _variant: Pending · open: Closed_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *):where(button) {
@@ -287,15 +287,15 @@ _variant: Pending · open: Closed_
 .tool {
   margin-bottom: calc(0.25rem * 4);
   width: 450px;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -317,7 +317,7 @@ _variant: Pending · open: Closed_
 .tool__icon {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
 }
 
 .tool__part {
@@ -335,18 +335,18 @@ _variant: Pending · open: Closed_
   justify-content: center;
   gap: calc(0.25rem * 1.5);
   overflow: hidden;
-  border-radius: calc(infinity * 1px);
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.965 0 0);
+  background-color: var(--color-semantic-accent, #f3f3f3);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -361,7 +361,7 @@ _variant: Pending · open: Closed_
 .tool__icon-3 {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: transform, translate, scale, rotate;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -370,7 +370,7 @@ _variant: Pending · open: Closed_
 .tool__box-2 {
   display: none !important;
   padding: calc(0.25rem * 4);
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   outline-style: none;
   animation-name: exit;
   animation-duration: 150ms;
@@ -398,7 +398,7 @@ _variant: Running · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -409,7 +409,7 @@ _variant: Running · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *)::after {
@@ -417,7 +417,7 @@ _variant: Running · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *):where(button) {
@@ -445,14 +445,14 @@ _variant: Running · open: Open_
 }
 
 :where(.tool, .tool *):where(pre) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
 }
 
 :where(.tool, .tool *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -461,15 +461,15 @@ _variant: Running · open: Open_
 .tool {
   margin-bottom: calc(0.25rem * 4);
   width: 450px;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -491,7 +491,7 @@ _variant: Running · open: Open_
 .tool__icon {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
 }
 
 .tool__part {
@@ -509,18 +509,18 @@ _variant: Running · open: Open_
   justify-content: center;
   gap: calc(0.25rem * 1.5);
   overflow: hidden;
-  border-radius: calc(infinity * 1px);
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.965 0 0);
+  background-color: var(--color-semantic-accent, #f3f3f3);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -536,7 +536,7 @@ _variant: Running · open: Open_
 .tool__icon-3 {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: transform, translate, scale, rotate;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -545,7 +545,7 @@ _variant: Running · open: Open_
 
 .tool__box-2 {
   padding: calc(0.25rem * 4);
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   outline-style: none;
   animation-name: enter;
   animation-duration: 150ms;
@@ -562,24 +562,24 @@ _variant: Running · open: Open_
   line-height: calc(1 / 0.75);
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   text-transform: uppercase;
 }
 
 .tool__box-4 {
-  border-radius: calc(0.625rem - 2px);
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 50%, transparent);
+  border-radius: var(--radius-md, 8px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 50%, transparent);
 }
 
 .tool__box-5 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  background-color: oklch(0.985 0 0);
-  color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-primary-foreground, #fafafa);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .tool__box-6 {
@@ -595,7 +595,7 @@ _variant: Running · open: Open_
 }
 
 .tool__box-8 {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -625,7 +625,7 @@ _variant: Awaiting approval · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -636,7 +636,7 @@ _variant: Awaiting approval · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *)::after {
@@ -644,7 +644,7 @@ _variant: Awaiting approval · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *):where(button) {
@@ -672,14 +672,14 @@ _variant: Awaiting approval · open: Open_
 }
 
 :where(.tool, .tool *):where(pre) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
 }
 
 :where(.tool, .tool *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -688,15 +688,15 @@ _variant: Awaiting approval · open: Open_
 .tool {
   margin-bottom: calc(0.25rem * 4);
   width: 450px;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -718,7 +718,7 @@ _variant: Awaiting approval · open: Open_
 .tool__icon {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
 }
 
 .tool__part {
@@ -736,18 +736,18 @@ _variant: Awaiting approval · open: Open_
   justify-content: center;
   gap: calc(0.25rem * 1.5);
   overflow: hidden;
-  border-radius: calc(infinity * 1px);
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.965 0 0);
+  background-color: var(--color-semantic-accent, #f3f3f3);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -763,7 +763,7 @@ _variant: Awaiting approval · open: Open_
 .tool__icon-3 {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: transform, translate, scale, rotate;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -772,7 +772,7 @@ _variant: Awaiting approval · open: Open_
 
 .tool__box-2 {
   padding: calc(0.25rem * 4);
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   outline-style: none;
   animation-name: enter;
   animation-duration: 150ms;
@@ -789,24 +789,24 @@ _variant: Awaiting approval · open: Open_
   line-height: calc(1 / 0.75);
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   text-transform: uppercase;
 }
 
 .tool__box-4 {
-  border-radius: calc(0.625rem - 2px);
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 50%, transparent);
+  border-radius: var(--radius-md, 8px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 50%, transparent);
 }
 
 .tool__box-5 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  background-color: oklch(0.985 0 0);
-  color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-primary-foreground, #fafafa);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .tool__box-6 {
@@ -822,7 +822,7 @@ _variant: Awaiting approval · open: Open_
 }
 
 .tool__box-8 {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -846,7 +846,7 @@ _variant: Completed · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -857,7 +857,7 @@ _variant: Completed · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *)::after {
@@ -865,7 +865,7 @@ _variant: Completed · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *):where(button) {
@@ -893,14 +893,14 @@ _variant: Completed · open: Open_
 }
 
 :where(.tool, .tool *):where(pre) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
 }
 
 :where(.tool, .tool *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -909,15 +909,15 @@ _variant: Completed · open: Open_
 .tool {
   margin-bottom: calc(0.25rem * 4);
   width: 450px;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -939,7 +939,7 @@ _variant: Completed · open: Open_
 .tool__icon {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
 }
 
 .tool__part {
@@ -957,18 +957,18 @@ _variant: Completed · open: Open_
   justify-content: center;
   gap: calc(0.25rem * 1.5);
   overflow: hidden;
-  border-radius: calc(infinity * 1px);
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.965 0 0);
+  background-color: var(--color-semantic-accent, #f3f3f3);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -984,7 +984,7 @@ _variant: Completed · open: Open_
 .tool__icon-3 {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: transform, translate, scale, rotate;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -993,7 +993,7 @@ _variant: Completed · open: Open_
 
 .tool__box-2 {
   padding: calc(0.25rem * 4);
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   outline-style: none;
   animation-name: enter;
   animation-duration: 150ms;
@@ -1012,24 +1012,24 @@ _variant: Completed · open: Open_
   line-height: calc(1 / 0.75);
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   text-transform: uppercase;
 }
 
 .tool__box-4 {
-  border-radius: calc(0.625rem - 2px);
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 50%, transparent);
+  border-radius: var(--radius-md, 8px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 50%, transparent);
 }
 
 .tool__box-5 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  background-color: oklch(0.985 0 0);
-  color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-primary-foreground, #fafafa);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .tool__box-6 {
@@ -1045,7 +1045,7 @@ _variant: Completed · open: Open_
 }
 
 .tool__box-8 {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -1056,7 +1056,7 @@ _variant: Completed · open: Open_
 
 .tool__box-9 {
   overflow-x: auto;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
 }
@@ -1076,7 +1076,7 @@ _variant: Denied · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -1087,7 +1087,7 @@ _variant: Denied · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *)::after {
@@ -1095,7 +1095,7 @@ _variant: Denied · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *):where(button) {
@@ -1123,14 +1123,14 @@ _variant: Denied · open: Open_
 }
 
 :where(.tool, .tool *):where(pre) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
 }
 
 :where(.tool, .tool *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -1139,15 +1139,15 @@ _variant: Denied · open: Open_
 .tool {
   margin-bottom: calc(0.25rem * 4);
   width: 450px;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1169,7 +1169,7 @@ _variant: Denied · open: Open_
 .tool__icon {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
 }
 
 .tool__part {
@@ -1187,18 +1187,18 @@ _variant: Denied · open: Open_
   justify-content: center;
   gap: calc(0.25rem * 1.5);
   overflow: hidden;
-  border-radius: calc(infinity * 1px);
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.965 0 0);
+  background-color: var(--color-semantic-accent, #f3f3f3);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1214,7 +1214,7 @@ _variant: Denied · open: Open_
 .tool__icon-3 {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: transform, translate, scale, rotate;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1223,7 +1223,7 @@ _variant: Denied · open: Open_
 
 .tool__box-2 {
   padding: calc(0.25rem * 4);
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   outline-style: none;
   animation-name: enter;
   animation-duration: 150ms;
@@ -1240,24 +1240,24 @@ _variant: Denied · open: Open_
   line-height: calc(1 / 0.75);
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   text-transform: uppercase;
 }
 
 .tool__box-4 {
-  border-radius: calc(0.625rem - 2px);
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 50%, transparent);
+  border-radius: var(--radius-md, 8px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 50%, transparent);
 }
 
 .tool__box-5 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  background-color: oklch(0.985 0 0);
-  color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-primary-foreground, #fafafa);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .tool__box-6 {
@@ -1273,7 +1273,7 @@ _variant: Denied · open: Open_
 }
 
 .tool__box-8 {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -1297,7 +1297,7 @@ _variant: Error · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -1308,7 +1308,7 @@ _variant: Error · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *)::after {
@@ -1316,7 +1316,7 @@ _variant: Error · open: Open_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.tool, .tool *):where(button) {
@@ -1344,14 +1344,14 @@ _variant: Error · open: Open_
 }
 
 :where(.tool, .tool *):where(pre) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
 }
 
 :where(.tool, .tool *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -1360,15 +1360,15 @@ _variant: Error · open: Open_
 .tool {
   margin-bottom: calc(0.25rem * 4);
   width: 450px;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1390,7 +1390,7 @@ _variant: Error · open: Open_
 .tool__icon {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
 }
 
 .tool__part {
@@ -1408,18 +1408,18 @@ _variant: Error · open: Open_
   justify-content: center;
   gap: calc(0.25rem * 1.5);
   overflow: hidden;
-  border-radius: calc(infinity * 1px);
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.965 0 0);
+  background-color: var(--color-semantic-accent, #f3f3f3);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1435,7 +1435,7 @@ _variant: Error · open: Open_
 .tool__icon-3 {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: transform, translate, scale, rotate;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1444,7 +1444,7 @@ _variant: Error · open: Open_
 
 .tool__box-2 {
   padding: calc(0.25rem * 4);
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   outline-style: none;
   animation-name: enter;
   animation-duration: 150ms;
@@ -1463,24 +1463,24 @@ _variant: Error · open: Open_
   line-height: calc(1 / 0.75);
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   text-transform: uppercase;
 }
 
 .tool__box-4 {
-  border-radius: calc(0.625rem - 2px);
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 50%, transparent);
+  border-radius: var(--radius-md, 8px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 50%, transparent);
 }
 
 .tool__box-5 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  background-color: oklch(0.985 0 0);
-  color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-primary-foreground, #fafafa);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .tool__box-6 {
@@ -1496,7 +1496,7 @@ _variant: Error · open: Open_
 }
 
 .tool__box-8 {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -1507,10 +1507,10 @@ _variant: Error · open: Open_
 
 .tool__box-9 {
   overflow-x: auto;
-  border-radius: calc(0.625rem - 2px);
-  background-color: color-mix(in oklab, oklch(0.55 0.15 25) 10%, transparent);
+  border-radius: var(--radius-md, 8px);
+  background-color: color-mix(in oklab, var(--color-semantic-destructive, #b94642) 10%, transparent);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
-  color: oklch(0.55 0.15 25);
+  color: var(--color-semantic-destructive, #b94642);
 }
 ```

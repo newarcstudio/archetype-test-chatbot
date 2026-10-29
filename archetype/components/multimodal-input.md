@@ -26,7 +26,7 @@ _variant: Empty · status: Ready · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -37,7 +37,7 @@ _variant: Empty · status: Ready · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *)::after {
@@ -45,7 +45,7 @@ _variant: Empty · status: Ready · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *):where(input) {
@@ -101,12 +101,12 @@ _variant: Empty · status: Ready · chat: Ongoing_
   width: 720px;
   flex-direction: column;
   gap: calc(0.25rem * 4);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -142,14 +142,14 @@ _variant: Empty · status: Ready · chat: Ongoing_
   outline-style: none;
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
-  background-color: color-mix(in oklab, oklch(1 0 0) 70%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-popover, #ffffff) 70%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor, 0 1px 2px oklch(0 0 0 / 0.04);
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   animation-duration: 300ms;
-  border-radius: 1rem;
+  border-radius: var(--radius-2xl, 16px);
   height: auto;
   flex-direction: column;
 }
@@ -165,7 +165,7 @@ _variant: Empty · status: Ready · chat: Ongoing_
   border-radius: 0;
   border-style: solid;
   border-width: 0px;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   background-color: transparent;
   padding-inline: calc(0.25rem * 4);
   padding-block: calc(0.25rem * 2);
@@ -195,7 +195,7 @@ _variant: Empty · status: Ready · chat: Ongoing_
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   -webkit-user-select: none;
   user-select: none;
 }
@@ -215,17 +215,17 @@ _variant: Empty · status: Ready · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 40%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 40%, transparent);
   background-clip: padding-box;
   padding: 0.25rem;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -250,7 +250,7 @@ _variant: Empty · status: Ready · chat: Ongoing_
   align-items: center;
   justify-content: space-between;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -259,7 +259,7 @@ _variant: Empty · status: Ready · chat: Ongoing_
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -290,17 +290,17 @@ _variant: Empty · status: Ready · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 2);
-  border-radius: calc(0.625rem + 4px);
+  border-radius: var(--radius-xl, 14px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.94 0 0);
+  background-color: var(--color-semantic-muted, #ebebeb);
   background-clip: padding-box;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 25%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 25%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -336,7 +336,7 @@ _variant: Empty · status: Ready · chat: New_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -347,7 +347,7 @@ _variant: Empty · status: Ready · chat: New_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *)::after {
@@ -355,7 +355,7 @@ _variant: Empty · status: Ready · chat: New_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *):where(button) {
@@ -411,12 +411,12 @@ _variant: Empty · status: Ready · chat: New_
   width: 720px;
   flex-direction: column;
   gap: calc(0.25rem * 4);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -444,18 +444,18 @@ _variant: Empty · status: Ready · chat: New_
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
-  border-radius: calc(0.625rem + 4px);
+  border-radius: var(--radius-xl, 14px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 50%, transparent);
-  background-color: color-mix(in oklab, oklch(1 0 0) 30%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 50%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-popover, #ffffff) 30%, transparent);
   background-clip: padding-box;
   padding-inline: calc(0.25rem * 4);
   padding-block: calc(0.25rem * 3);
   text-align: left;
   line-height: 1.625;
   font-weight: 500;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -500,14 +500,14 @@ _variant: Empty · status: Ready · chat: New_
   outline-style: none;
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
-  background-color: color-mix(in oklab, oklch(1 0 0) 70%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-popover, #ffffff) 70%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor, 0 1px 2px oklch(0 0 0 / 0.04);
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   animation-duration: 300ms;
-  border-radius: 1rem;
+  border-radius: var(--radius-2xl, 16px);
   height: auto;
   flex-direction: column;
 }
@@ -523,7 +523,7 @@ _variant: Empty · status: Ready · chat: New_
   border-radius: 0;
   border-style: solid;
   border-width: 0px;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   background-color: transparent;
   padding-inline: calc(0.25rem * 4);
   padding-block: calc(0.25rem * 2);
@@ -553,7 +553,7 @@ _variant: Empty · status: Ready · chat: New_
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   -webkit-user-select: none;
   user-select: none;
 }
@@ -573,17 +573,17 @@ _variant: Empty · status: Ready · chat: New_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 40%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 40%, transparent);
   background-clip: padding-box;
   padding: 0.25rem;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -608,7 +608,7 @@ _variant: Empty · status: Ready · chat: New_
   align-items: center;
   justify-content: space-between;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -617,7 +617,7 @@ _variant: Empty · status: Ready · chat: New_
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -648,17 +648,17 @@ _variant: Empty · status: Ready · chat: New_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 2);
-  border-radius: calc(0.625rem + 4px);
+  border-radius: var(--radius-xl, 14px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.94 0 0);
+  background-color: var(--color-semantic-muted, #ebebeb);
   background-clip: padding-box;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 25%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 25%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -694,7 +694,7 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -705,7 +705,7 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *)::after {
@@ -713,7 +713,7 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *):where(input) {
@@ -769,12 +769,12 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   width: 720px;
   flex-direction: column;
   gap: calc(0.25rem * 4);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -810,14 +810,14 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   outline-style: none;
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
-  background-color: color-mix(in oklab, oklch(1 0 0) 70%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-popover, #ffffff) 70%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor, 0 1px 2px oklch(0 0 0 / 0.04);
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   animation-duration: 300ms;
-  border-radius: 1rem;
+  border-radius: var(--radius-2xl, 16px);
   height: auto;
   flex-direction: column;
 }
@@ -833,7 +833,7 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   border-radius: 0;
   border-style: solid;
   border-width: 0px;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   background-color: transparent;
   padding-inline: calc(0.25rem * 4);
   padding-block: calc(0.25rem * 2);
@@ -863,7 +863,7 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   -webkit-user-select: none;
   user-select: none;
 }
@@ -883,17 +883,17 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 40%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 40%, transparent);
   background-clip: padding-box;
   padding: 0.25rem;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -920,7 +920,7 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   align-items: center;
   justify-content: space-between;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -929,7 +929,7 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -959,18 +959,18 @@ _variant: Empty · status: Submitted · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: calc(0.625rem + 4px);
+  border-radius: var(--radius-xl, 14px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-sidebar-accent-foreground, #060606);
   background-clip: padding-box;
   padding: 0.25rem;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.985 0 0);
+  color: var(--color-semantic-primary-foreground, #fafafa);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -1002,7 +1002,7 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -1013,7 +1013,7 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *)::after {
@@ -1021,7 +1021,7 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *):where(input) {
@@ -1077,12 +1077,12 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   width: 720px;
   flex-direction: column;
   gap: calc(0.25rem * 4);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1118,14 +1118,14 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   outline-style: none;
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
-  background-color: color-mix(in oklab, oklch(1 0 0) 70%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-popover, #ffffff) 70%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor, 0 1px 2px oklch(0 0 0 / 0.04);
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   animation-duration: 300ms;
-  border-radius: 1rem;
+  border-radius: var(--radius-2xl, 16px);
   height: auto;
   flex-direction: column;
 }
@@ -1141,7 +1141,7 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   border-radius: 0;
   border-style: solid;
   border-width: 0px;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   background-color: transparent;
   padding-inline: calc(0.25rem * 4);
   padding-block: calc(0.25rem * 2);
@@ -1171,7 +1171,7 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   -webkit-user-select: none;
   user-select: none;
 }
@@ -1191,17 +1191,17 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 40%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 40%, transparent);
   background-clip: padding-box;
   padding: 0.25rem;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1228,7 +1228,7 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   align-items: center;
   justify-content: space-between;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -1237,7 +1237,7 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1268,17 +1268,17 @@ _variant: Empty · status: Streaming · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 2);
-  border-radius: calc(0.625rem + 4px);
+  border-radius: var(--radius-xl, 14px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.94 0 0);
+  background-color: var(--color-semantic-muted, #ebebeb);
   background-clip: padding-box;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 25%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 25%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1314,7 +1314,7 @@ _variant: Typed · status: Ready · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -1325,7 +1325,7 @@ _variant: Typed · status: Ready · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *)::after {
@@ -1333,7 +1333,7 @@ _variant: Typed · status: Ready · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *):where(input) {
@@ -1389,12 +1389,12 @@ _variant: Typed · status: Ready · chat: Ongoing_
   width: 720px;
   flex-direction: column;
   gap: calc(0.25rem * 4);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1430,14 +1430,14 @@ _variant: Typed · status: Ready · chat: Ongoing_
   outline-style: none;
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
-  background-color: color-mix(in oklab, oklch(1 0 0) 70%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-popover, #ffffff) 70%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor, 0 1px 2px oklch(0 0 0 / 0.04);
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   animation-duration: 300ms;
-  border-radius: 1rem;
+  border-radius: var(--radius-2xl, 16px);
   height: auto;
   flex-direction: column;
 }
@@ -1453,7 +1453,7 @@ _variant: Typed · status: Ready · chat: Ongoing_
   border-radius: 0;
   border-style: solid;
   border-width: 0px;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   background-color: transparent;
   padding-inline: calc(0.25rem * 4);
   padding-block: calc(0.25rem * 2);
@@ -1483,7 +1483,7 @@ _variant: Typed · status: Ready · chat: Ongoing_
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   -webkit-user-select: none;
   user-select: none;
 }
@@ -1503,17 +1503,17 @@ _variant: Typed · status: Ready · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 40%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 40%, transparent);
   background-clip: padding-box;
   padding: 0.25rem;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1538,7 +1538,7 @@ _variant: Typed · status: Ready · chat: Ongoing_
   align-items: center;
   justify-content: space-between;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -1547,7 +1547,7 @@ _variant: Typed · status: Ready · chat: Ongoing_
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1577,17 +1577,17 @@ _variant: Typed · status: Ready · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 2);
-  border-radius: calc(0.625rem + 4px);
+  border-radius: var(--radius-xl, 14px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-sidebar-accent-foreground, #060606);
   background-clip: padding-box;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.985 0 0);
+  color: var(--color-semantic-primary-foreground, #fafafa);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1621,7 +1621,7 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -1632,7 +1632,7 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *)::after {
@@ -1640,7 +1640,7 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.multimodal-input, .multimodal-input *):where(input) {
@@ -1696,12 +1696,12 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   width: 720px;
   flex-direction: column;
   gap: calc(0.25rem * 4);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1737,14 +1737,14 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   outline-style: none;
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
-  background-color: color-mix(in oklab, oklch(1 0 0) 70%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-popover, #ffffff) 70%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor, 0 1px 2px oklch(0 0 0 / 0.04);
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   animation-duration: 300ms;
-  border-radius: 1rem;
+  border-radius: var(--radius-2xl, 16px);
   height: auto;
   flex-direction: column;
 }
@@ -1767,11 +1767,11 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   width: calc(0.25rem * 24);
   flex-shrink: 0;
   overflow: hidden;
-  border-radius: calc(0.625rem + 4px);
+  border-radius: var(--radius-xl, 14px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 40%, transparent);
-  background-color: oklch(0.94 0 0);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 40%, transparent);
+  background-color: var(--color-semantic-muted, #ebebeb);
 }
 
 .multimodal-input__image {
@@ -1789,9 +1789,9 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   height: calc(0.25rem * 5);
   align-items: center;
   justify-content: center;
-  border-radius: calc(infinity * 1px);
+  border-radius: var(--radius-full, 9999px);
   background-color: color-mix(in oklab, #000 60%, transparent);
-  color: #fff;
+  color: var(--color-semantic-popover, #fff);
   opacity: 0%;
   backdrop-filter: blur(8px);
   transition-property: opacity;
@@ -1810,7 +1810,7 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   border-radius: 0;
   border-style: solid;
   border-width: 0px;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   background-color: transparent;
   padding-inline: calc(0.25rem * 4);
   padding-block: calc(0.25rem * 2);
@@ -1840,7 +1840,7 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   -webkit-user-select: none;
   user-select: none;
 }
@@ -1860,17 +1860,17 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 40%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 40%, transparent);
   background-clip: padding-box;
   padding: 0.25rem;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1895,7 +1895,7 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   align-items: center;
   justify-content: space-between;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -1904,7 +1904,7 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1935,17 +1935,17 @@ _variant: Attachment · status: Ready · chat: Ongoing_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 2);
-  border-radius: calc(0.625rem + 4px);
+  border-radius: var(--radius-xl, 14px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.94 0 0);
+  background-color: var(--color-semantic-muted, #ebebeb);
   background-clip: padding-box;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 25%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 25%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -27,7 +27,7 @@ _variant: User_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -38,7 +38,7 @@ _variant: User_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *)::after {
@@ -46,7 +46,7 @@ _variant: User_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *):where(p) {
@@ -73,12 +73,12 @@ _variant: User_
 .message {
   width: 720px;
   animation: fade-up 0.25s cubic-bezier(0.22, 1, 0.36, 1);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -97,18 +97,18 @@ _variant: User_
   flex-direction: column;
   gap: calc(0.25rem * 2);
   overflow: hidden;
-  border-radius: 1rem;
-  border-bottom-right-radius: 0.625rem;
+  border-radius: var(--radius-2xl, 16px);
+  border-bottom-right-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
-  background-image: linear-gradient(to bottom right in oklab, oklch(0.965 0 0) 0%, oklch(0.94 0 0) 100%);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
+  background-image: linear-gradient(to bottom right in oklab, var(--color-semantic-accent, rgb(243, 243, 243)) 0%, var(--color-semantic-muted, rgb(235, 235, 235)) 100%);
   padding-inline: calc(0.25rem * 3.5);
   padding-block: calc(0.25rem * 2);
   font-size: 13px;
   line-height: 1.65;
   overflow-wrap: break-word;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor, 0 1px 3px oklch(0 0 0 / 0.05), 0 1px 1px oklch(0 0 0 / 0.03);
 }
 
@@ -149,7 +149,7 @@ _variant: User_
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -158,7 +158,7 @@ _variant: User_
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 50%, transparent);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -214,7 +214,7 @@ _variant: User · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -225,7 +225,7 @@ _variant: User · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *)::after {
@@ -233,7 +233,7 @@ _variant: User · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *):where(p) {
@@ -260,12 +260,12 @@ _variant: User · state: hover_
 .message {
   width: 720px;
   animation: fade-up 0.25s cubic-bezier(0.22, 1, 0.36, 1);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -284,18 +284,18 @@ _variant: User · state: hover_
   flex-direction: column;
   gap: calc(0.25rem * 2);
   overflow: hidden;
-  border-radius: 1rem;
-  border-bottom-right-radius: 0.625rem;
+  border-radius: var(--radius-2xl, 16px);
+  border-bottom-right-radius: var(--radius-lg, 10px);
   border-style: solid;
   border-width: 1px;
-  border-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
-  background-image: linear-gradient(to bottom right in oklab, oklch(0.965 0 0) 0%, oklch(0.94 0 0) 100%);
+  border-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
+  background-image: linear-gradient(to bottom right in oklab, var(--color-semantic-accent, rgb(243, 243, 243)) 0%, var(--color-semantic-muted, rgb(235, 235, 235)) 100%);
   padding-inline: calc(0.25rem * 3.5);
   padding-block: calc(0.25rem * 2);
   font-size: 13px;
   line-height: 1.65;
   overflow-wrap: break-word;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor, 0 1px 3px oklch(0 0 0 / 0.05), 0 1px 1px oklch(0 0 0 / 0.03);
 }
 
@@ -336,7 +336,7 @@ _variant: User · state: hover_
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -345,7 +345,7 @@ _variant: User · state: hover_
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 50%, transparent);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -405,7 +405,7 @@ _variant: Assistant_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -416,7 +416,7 @@ _variant: Assistant_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *)::after {
@@ -424,7 +424,7 @@ _variant: Assistant_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *):where(svg) {
@@ -441,7 +441,7 @@ _variant: Assistant_
 }
 
 :where(.message, .message *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -461,12 +461,12 @@ _variant: Assistant_
 
 .message {
   width: 720px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -489,10 +489,10 @@ _variant: Assistant_
   height: calc(0.25rem * 7);
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 60%, transparent);
-  color: oklch(0.58 0 0);
-  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, oklch(0.9 0 0) 50%, transparent);
+  border-radius: var(--radius-lg, 10px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 60%, transparent);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
+  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, var(--color-semantic-input, #dedede) 50%, transparent);
 }
 
 .message__box-4 {
@@ -512,7 +512,7 @@ _variant: Assistant_
   overflow: hidden;
   font-size: 13px;
   line-height: 1.65;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .message__box-6 {
@@ -545,10 +545,10 @@ _variant: Assistant_
 
 .message__box-7 {
   border-radius: 0.25rem;
-  background-color: oklch(0.94 0 0);
+  background-color: var(--color-semantic-muted, #ebebeb);
   padding-inline: calc(0.25rem * 1.5);
   padding-block: calc(0.25rem * 0.5);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -576,7 +576,7 @@ _variant: Assistant_
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -585,7 +585,7 @@ _variant: Assistant_
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 50%, transparent);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -634,7 +634,7 @@ _variant: Assistant · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -645,7 +645,7 @@ _variant: Assistant · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *)::after {
@@ -653,7 +653,7 @@ _variant: Assistant · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *):where(svg) {
@@ -670,7 +670,7 @@ _variant: Assistant · state: hover_
 }
 
 :where(.message, .message *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -690,12 +690,12 @@ _variant: Assistant · state: hover_
 
 .message {
   width: 720px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -718,10 +718,10 @@ _variant: Assistant · state: hover_
   height: calc(0.25rem * 7);
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 60%, transparent);
-  color: oklch(0.58 0 0);
-  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, oklch(0.9 0 0) 50%, transparent);
+  border-radius: var(--radius-lg, 10px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 60%, transparent);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
+  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, var(--color-semantic-input, #dedede) 50%, transparent);
 }
 
 .message__box-4 {
@@ -741,7 +741,7 @@ _variant: Assistant · state: hover_
   overflow: hidden;
   font-size: 13px;
   line-height: 1.65;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .message__box-6 {
@@ -774,10 +774,10 @@ _variant: Assistant · state: hover_
 
 .message__box-7 {
   border-radius: 0.25rem;
-  background-color: oklch(0.94 0 0);
+  background-color: var(--color-semantic-muted, #ebebeb);
   padding-inline: calc(0.25rem * 1.5);
   padding-block: calc(0.25rem * 0.5);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -805,7 +805,7 @@ _variant: Assistant · state: hover_
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -814,7 +814,7 @@ _variant: Assistant · state: hover_
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 50%, transparent);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -863,7 +863,7 @@ _variant: With reasoning_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -874,7 +874,7 @@ _variant: With reasoning_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *)::after {
@@ -882,7 +882,7 @@ _variant: With reasoning_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *):where(svg) {
@@ -911,7 +911,7 @@ _variant: With reasoning_
 }
 
 :where(.message, .message *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -919,12 +919,12 @@ _variant: With reasoning_
 
 .message {
   width: 720px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -947,10 +947,10 @@ _variant: With reasoning_
   height: calc(0.25rem * 7);
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 60%, transparent);
-  color: oklch(0.58 0 0);
-  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, oklch(0.9 0 0) 50%, transparent);
+  border-radius: var(--radius-lg, 10px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 60%, transparent);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
+  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, var(--color-semantic-input, #dedede) 50%, transparent);
 }
 
 .message__box-4 {
@@ -968,7 +968,7 @@ _variant: With reasoning_
   gap: calc(0.25rem * 2);
   font-size: 13px;
   line-height: 1.65;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -992,7 +992,7 @@ _variant: With reasoning_
   overflow: hidden;
   font-size: 13px;
   line-height: 1.65;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .message__box-6 {
@@ -1025,10 +1025,10 @@ _variant: With reasoning_
 
 .message__box-7 {
   border-radius: 0.25rem;
-  background-color: oklch(0.94 0 0);
+  background-color: var(--color-semantic-muted, #ebebeb);
   padding-inline: calc(0.25rem * 1.5);
   padding-block: calc(0.25rem * 0.5);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -1056,7 +1056,7 @@ _variant: With reasoning_
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -1065,7 +1065,7 @@ _variant: With reasoning_
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 50%, transparent);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1110,7 +1110,7 @@ _variant: With tool call_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -1121,7 +1121,7 @@ _variant: With tool call_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *)::after {
@@ -1129,7 +1129,7 @@ _variant: With tool call_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *):where(svg) {
@@ -1157,14 +1157,14 @@ _variant: With tool call_
 }
 
 :where(.message, .message *):where(pre) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
 }
 
 :where(.message, .message *):where(code) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -1172,12 +1172,12 @@ _variant: With tool call_
 
 .message {
   width: 720px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1200,10 +1200,10 @@ _variant: With tool call_
   height: calc(0.25rem * 7);
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 60%, transparent);
-  color: oklch(0.58 0 0);
-  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, oklch(0.9 0 0) 50%, transparent);
+  border-radius: var(--radius-lg, 10px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 60%, transparent);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
+  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, var(--color-semantic-input, #dedede) 50%, transparent);
 }
 
 .message__box-4 {
@@ -1221,7 +1221,7 @@ _variant: With tool call_
 .message__box-6 {
   margin-bottom: calc(0.25rem * 4);
   width: 100%;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
 }
@@ -1244,7 +1244,7 @@ _variant: With tool call_
 .message__icon {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
 }
 
 .message__part {
@@ -1262,18 +1262,18 @@ _variant: With tool call_
   justify-content: center;
   gap: calc(0.25rem * 1.5);
   overflow: hidden;
-  border-radius: calc(infinity * 1px);
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.965 0 0);
+  background-color: var(--color-semantic-accent, #f3f3f3);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1289,7 +1289,7 @@ _variant: With tool call_
 .message__icon-3 {
   width: calc(0.25rem * 4);
   height: calc(0.25rem * 4);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   transition-property: transform, translate, scale, rotate;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1298,7 +1298,7 @@ _variant: With tool call_
 
 .message__box-8 {
   padding: calc(0.25rem * 4);
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   outline-style: none;
   animation-name: enter;
   animation-duration: 150ms;
@@ -1315,24 +1315,24 @@ _variant: With tool call_
   line-height: calc(1 / 0.75);
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   text-transform: uppercase;
 }
 
 .message__box-10 {
-  border-radius: calc(0.625rem - 2px);
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 50%, transparent);
+  border-radius: var(--radius-md, 8px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 50%, transparent);
 }
 
 .message__box-11 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   border-style: solid;
   border-width: 1px;
-  background-color: oklch(0.985 0 0);
-  color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-primary-foreground, #fafafa);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .message__box-12 {
@@ -1348,7 +1348,7 @@ _variant: With tool call_
 }
 
 .message__box-14 {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-ui-monospace, ui-monospace), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
 }
@@ -1376,7 +1376,7 @@ _variant: With tool call_
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
@@ -1385,7 +1385,7 @@ _variant: With tool call_
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: color-mix(in oklab, oklch(0.58 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-muted-foreground, #7a7a7a) 50%, transparent);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1426,7 +1426,7 @@ _variant: Thinking_
 
 ```html
 <div class="message" data-role="assistant" data-testid="message-assistant-loading">
-  <div class="message__box"><div class="message__box-2"><div class="message__box-3"><svg height="13" stroke-linejoin="round" viewBox="0 0 16 16" width="13" style="color: currentcolor;"><path d="M2.5 0.5V0H3.5V0.5C3.5 1.60457 4.39543 2.5 5.5 2.5H6V3V3.5H5.5C4.39543 3.5 3.5 4.39543 3.5 5.5V6H3H2.5V5.5C2.5 4.39543 1.60457 3.5 0.5 3.5H0V3V2.5H0.5C1.60457 2.5 2.5 1.60457 2.5 0.5Z" fill="currentColor"></path><path d="M14.5 4.5V5H13.5V4.5C13.5 3.94772 13.0523 3.5 12.5 3.5H12V3V2.5H12.5C13.0523 2.5 13.5 2.05228 13.5 1.5V1H14H14.5V1.5C14.5 2.05228 14.9477 2.5 15.5 2.5H16V3V3.5H15.5C14.9477 3.5 14.5 3.94772 14.5 4.5Z" fill="currentColor"></path><path d="M8.40706 4.92939L8.5 4H9.5L9.59294 4.92939C9.82973 7.29734 11.7027 9.17027 14.0706 9.40706L15 9.5V10.5L14.0706 10.5929C11.7027 10.8297 9.82973 12.7027 9.59294 15.0706L9.5 16H8.5L8.40706 15.0706C8.17027 12.7027 6.29734 10.8297 3.92939 10.5929L3 10.5V9.5L3.92939 9.40706C6.29734 9.17027 8.17027 7.29734 8.40706 4.92939Z" fill="currentColor"></path></svg></div></div><div class="message__box-4"><span class="message__part" style="--spread: 20px; background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) calc(50% - 20px), oklch(0.985 0 0), rgba(0, 0, 0, 0) calc(50% + 20px)), linear-gradient(oklch(0.58 0 0), oklch(0.58 0 0)); background-position: 0% center;">Waiting...</span></div></div>
+  <div class="message__box"><div class="message__box-2"><div class="message__box-3"><svg height="13" stroke-linejoin="round" viewBox="0 0 16 16" width="13" style="color: currentcolor;"><path d="M2.5 0.5V0H3.5V0.5C3.5 1.60457 4.39543 2.5 5.5 2.5H6V3V3.5H5.5C4.39543 3.5 3.5 4.39543 3.5 5.5V6H3H2.5V5.5C2.5 4.39543 1.60457 3.5 0.5 3.5H0V3V2.5H0.5C1.60457 2.5 2.5 1.60457 2.5 0.5Z" fill="currentColor"></path><path d="M14.5 4.5V5H13.5V4.5C13.5 3.94772 13.0523 3.5 12.5 3.5H12V3V2.5H12.5C13.0523 2.5 13.5 2.05228 13.5 1.5V1H14H14.5V1.5C14.5 2.05228 14.9477 2.5 15.5 2.5H16V3V3.5H15.5C14.9477 3.5 14.5 3.94772 14.5 4.5Z" fill="currentColor"></path><path d="M8.40706 4.92939L8.5 4H9.5L9.59294 4.92939C9.82973 7.29734 11.7027 9.17027 14.0706 9.40706L15 9.5V10.5L14.0706 10.5929C11.7027 10.8297 9.82973 12.7027 9.59294 15.0706L9.5 16H8.5L8.40706 15.0706C8.17027 12.7027 6.29734 10.8297 3.92939 10.5929L3 10.5V9.5L3.92939 9.40706C6.29734 9.17027 8.17027 7.29734 8.40706 4.92939Z" fill="currentColor"></path></svg></div></div><div class="message__box-4"><span class="message__part" style="--spread: 20px; background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) calc(50% - 20px), var(--color-semantic-primary-foreground, rgb(250, 250, 250)), rgba(0, 0, 0, 0) calc(50% + 20px)), linear-gradient(var(--color-semantic-muted-foreground, rgb(122, 122, 122)), var(--color-semantic-muted-foreground, rgb(122, 122, 122))); background-position: 0% center;">Waiting...</span></div></div>
 </div>
 ```
 
@@ -1436,7 +1436,7 @@ _variant: Thinking_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -1447,7 +1447,7 @@ _variant: Thinking_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *)::after {
@@ -1455,7 +1455,7 @@ _variant: Thinking_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.message, .message *):where(svg) {
@@ -1465,12 +1465,12 @@ _variant: Thinking_
 
 .message {
   width: 720px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1493,10 +1493,10 @@ _variant: Thinking_
   height: calc(0.25rem * 7);
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
-  background-color: color-mix(in oklab, oklch(0.94 0 0) 60%, transparent);
-  color: oklch(0.58 0 0);
-  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, oklch(0.9 0 0) 50%, transparent);
+  border-radius: var(--radius-lg, 10px);
+  background-color: color-mix(in oklab, var(--color-semantic-muted, #ebebeb) 60%, transparent);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
+  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, var(--color-semantic-input, #dedede) 50%, transparent);
 }
 
 .message__box-4 {

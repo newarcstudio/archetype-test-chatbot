@@ -49,7 +49,7 @@ other agents. Two tools want their own pointer as well:
 | `tailwind.css` | The same tokens as a Tailwind 4 `@theme` block. |
 | `tokens.json` | The same tokens in W3C DTCG format, for build pipelines. |
 | `brand.md` | Voice, tone, logo usage, and the full brand context. |
-| `components/` | 20 components, as real markup and CSS. |
+| `components/` | 21 components, as real markup and CSS. |
 
 ## Refreshing
 

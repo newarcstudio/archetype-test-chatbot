@@ -24,7 +24,7 @@ _size: Default · variant: Alert Dialog_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -35,7 +35,7 @@ _size: Default · variant: Alert Dialog_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.alert-dialog, .alert-dialog *)::after {
@@ -43,7 +43,7 @@ _size: Default · variant: Alert Dialog_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.alert-dialog, .alert-dialog *):where(h2) {
@@ -73,12 +73,12 @@ _size: Default · variant: Alert Dialog_
   position: relative;
   width: 800px;
   height: 480px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -101,10 +101,10 @@ _size: Default · variant: Alert Dialog_
   width: 100%;
   translate: calc(calc(1 / 2 * 100%) * -1) calc(calc(1 / 2 * 100%) * -1);
   gap: calc(0.25rem * 6);
-  border-radius: 0.625rem;
-  background-color: oklch(0.985 0 0);
+  border-radius: var(--radius-lg, 10px);
+  background-color: var(--color-semantic-primary-foreground, #fafafa);
   padding: calc(0.25rem * 6);
-  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, oklch(0.12 0 0) 5%, transparent);
+  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, var(--color-semantic-sidebar-accent-foreground, #060606) 5%, transparent);
   transition-duration: 100ms;
   outline-style: none;
   animation-duration: 100ms;
@@ -128,7 +128,7 @@ _size: Default · variant: Alert Dialog_
 .alert-dialog__text {
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   text-wrap: pretty;
 }
 
@@ -146,11 +146,11 @@ _size: Default · variant: Alert Dialog_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
-  border-color: oklch(0.9 0 0);
-  background-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
+  border-color: var(--color-semantic-input, #dedede);
+  background-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
   background-clip: padding-box;
   padding-inline: calc(0.25rem * 3);
   font-size: 0.875rem;
@@ -172,18 +172,18 @@ _size: Default · variant: Alert Dialog_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-sidebar-accent-foreground, #060606);
   background-clip: padding-box;
   padding-inline: calc(0.25rem * 3);
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.985 0 0);
+  color: var(--color-semantic-primary-foreground, #fafafa);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -207,7 +207,7 @@ _size: Small · variant: Alert Dialog_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -218,7 +218,7 @@ _size: Small · variant: Alert Dialog_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.alert-dialog, .alert-dialog *)::after {
@@ -226,7 +226,7 @@ _size: Small · variant: Alert Dialog_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.alert-dialog, .alert-dialog *):where(h2) {
@@ -256,12 +256,12 @@ _size: Small · variant: Alert Dialog_
   position: relative;
   width: 800px;
   height: 480px;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -284,10 +284,10 @@ _size: Small · variant: Alert Dialog_
   width: 100%;
   translate: calc(calc(1 / 2 * 100%) * -1) calc(calc(1 / 2 * 100%) * -1);
   gap: calc(0.25rem * 6);
-  border-radius: 0.625rem;
-  background-color: oklch(0.985 0 0);
+  border-radius: var(--radius-lg, 10px);
+  background-color: var(--color-semantic-primary-foreground, #fafafa);
   padding: calc(0.25rem * 6);
-  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, oklch(0.12 0 0) 5%, transparent);
+  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, var(--color-semantic-sidebar-accent-foreground, #060606) 5%, transparent);
   transition-duration: 100ms;
   outline-style: none;
   animation-duration: 100ms;
@@ -311,7 +311,7 @@ _size: Small · variant: Alert Dialog_
 .alert-dialog__text {
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
   text-wrap: pretty;
 }
 
@@ -330,11 +330,11 @@ _size: Small · variant: Alert Dialog_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
-  border-color: oklch(0.9 0 0);
-  background-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
+  border-color: var(--color-semantic-input, #dedede);
+  background-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
   background-clip: padding-box;
   padding-inline: calc(0.25rem * 3);
   font-size: 0.875rem;
@@ -356,18 +356,18 @@ _size: Small · variant: Alert Dialog_
   align-items: center;
   justify-content: center;
   gap: calc(0.25rem * 1.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-sidebar-accent-foreground, #060606);
   background-clip: padding-box;
   padding-inline: calc(0.25rem * 3);
   font-size: 0.875rem;
   line-height: calc(1.25 / 0.875);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.985 0 0);
+  color: var(--color-semantic-primary-foreground, #fafafa);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;

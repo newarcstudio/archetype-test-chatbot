@@ -7,7 +7,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-semantic-background: #fafafa;
+  --color-semantic-background: #ebdada;
   --color-semantic-foreground: #060606;
   --color-semantic-card: #ffffff;
   --color-semantic-popover: #ffffff;
