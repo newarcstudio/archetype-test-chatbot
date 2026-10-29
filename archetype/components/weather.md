@@ -16,7 +16,7 @@ Key: `weather`
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -27,7 +27,7 @@ Key: `weather`
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.weather, .weather *)::after {
@@ -35,7 +35,7 @@ Key: `weather`
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.weather, .weather *):where(svg) {
@@ -50,24 +50,24 @@ Key: `weather`
   flex-direction: column;
   gap: calc(0.25rem * 3);
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: var(--radius-2xl, 16px);
   background-image: linear-gradient(to bottom right in oklab, oklch(0.359 0.144 278.697) 0%, oklch(0.381 0.176 304.987) 50%, oklch(0.208 0.042 265.755) 100%);
   padding: calc(0.25rem * 4);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor, 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   backdrop-filter: blur(8px);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
 .weather__box {
   position: absolute;
   inset: 0;
-  background-color: color-mix(in oklab, #fff 10%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-popover, #fff) 10%, transparent);
   backdrop-filter: blur(8px);
 }
 
@@ -87,13 +87,13 @@ Key: `weather`
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
-  color: color-mix(in oklab, #fff 80%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 80%, transparent);
 }
 
 .weather__box-5 {
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
-  color: color-mix(in oklab, #fff 60%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 60%, transparent);
 }
 
 .weather__box-6 {
@@ -110,20 +110,20 @@ Key: `weather`
 }
 
 .weather__box-8 {
-  color: color-mix(in oklab, #fff 90%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 90%, transparent);
 }
 
 .weather__box-9 {
   font-size: 1.875rem;
   line-height: calc(2.25 / 1.875);
   font-weight: 300;
-  color: #fff;
+  color: var(--color-semantic-popover, #fff);
 }
 
 .weather__part {
   font-size: 1.125rem;
   line-height: calc(1.75 / 1.125);
-  color: color-mix(in oklab, #fff 80%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 80%, transparent);
 }
 
 .weather__box-10 {
@@ -134,18 +134,18 @@ Key: `weather`
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
-  color: color-mix(in oklab, #fff 90%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 90%, transparent);
 }
 
 .weather__box-12 {
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
-  color: color-mix(in oklab, #fff 70%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 70%, transparent);
 }
 
 .weather__box-13 {
-  border-radius: calc(0.625rem + 4px);
-  background-color: color-mix(in oklab, #fff 10%, transparent);
+  border-radius: var(--radius-xl, 14px);
+  background-color: color-mix(in oklab, var(--color-semantic-popover, #fff) 10%, transparent);
   padding: calc(0.25rem * 3);
   backdrop-filter: blur(8px);
 }
@@ -155,7 +155,7 @@ Key: `weather`
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
-  color: color-mix(in oklab, #fff 80%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 80%, transparent);
 }
 
 .weather__box-15 {
@@ -171,7 +171,7 @@ Key: `weather`
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   padding-inline: 0.25rem;
   padding-block: calc(0.25rem * 1.5);
 }
@@ -180,18 +180,18 @@ Key: `weather`
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
-  color: color-mix(in oklab, #fff 70%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 70%, transparent);
 }
 
 .weather__box-18 {
-  color: color-mix(in oklab, #fff 60%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 60%, transparent);
 }
 
 .weather__box-19 {
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
-  color: #fff;
+  color: var(--color-semantic-popover, #fff);
 }
 
 .weather__box-20 {
@@ -200,6 +200,6 @@ Key: `weather`
   justify-content: space-between;
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
-  color: color-mix(in oklab, #fff 60%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-popover, #fff) 60%, transparent);
 }
 ```

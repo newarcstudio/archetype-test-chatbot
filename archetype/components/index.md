@@ -27,3 +27,4 @@ live link back to `../tokens.css`.
 | [Skeleton](./skeleton.md) | `skeleton` | 3 | Default, Block, Avatar |
 | [Spinner](./spinner.md) | `spinner` | 2 | Default, Large |
 | [Tooltip](./tooltip.md) | `tooltip` | 4 | Default, Bottom, Right, Left |
+| [Radio](./radio.md) | `radio` | 5 | Default, Hover, Focus, Disabled, Unchecked |

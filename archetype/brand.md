@@ -46,7 +46,7 @@ What this brand defines and where to get each part. Foundations are spelled out 
 - **Spacing** — 10 steps · inline
 - **Radius** — 6 steps · inline
 - **Shadow** — 4 levels · inline
-- **Components** — 20 components, 111 examples · markup via `get_brand` domain `components`
+- **Components** — 21 components, 116 examples · markup via `get_brand` domain `components`
 - **Templates** — none yet
 - **Artifacts** — none yet
 - **Asset Library** — none yet
@@ -66,7 +66,7 @@ _No colors defined yet._
 
 _Pick colors by purpose: use these tokens, which alias the scales above._
 
-- `background`: `#fafafa`
+- `background`: `#ebdada`
 - `foreground`: `#060606`
 - `card`: `#ffffff`
 - `popover`: `#ffffff`
@@ -156,6 +156,7 @@ _No icon system chosen yet._
 - **Skeleton** (`skeleton`) — 3 examples: Default, Block, Avatar
 - **Spinner** (`spinner`) — 2 examples: Default, Large
 - **Tooltip** (`tooltip`) — 4 examples: Default, Bottom, Right, Left
+- **Radio** (`radio`) — 5 examples: Default, Hover, Focus, Disabled, Unchecked
 
 _Each example is this brand's real HTML + CSS. Fetch via MCP: `get_brand` domain `components`, with the component key._
 

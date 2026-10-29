@@ -24,7 +24,7 @@ _variant: Actions_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -35,7 +35,7 @@ _variant: Actions_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.dropdown-menu, .dropdown-menu *)::after {
@@ -43,7 +43,7 @@ _variant: Actions_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.dropdown-menu, .dropdown-menu *):where(button) {
@@ -64,12 +64,12 @@ _variant: Actions_
 }
 
 .dropdown-menu {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -80,10 +80,10 @@ _variant: Actions_
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   background-clip: padding-box;
   padding-inline: calc(0.25rem * 3);
   font-size: 0.875rem;
@@ -96,8 +96,8 @@ _variant: Actions_
   outline-style: none;
   -webkit-user-select: none;
   user-select: none;
-  background-color: oklch(0.94 0 0);
-  color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-muted, #ebebeb);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .dropdown-menu__icon {
@@ -115,11 +115,11 @@ _variant: Actions_
   transform-origin: 0% 0px;
   overflow-x: hidden;
   overflow-y: auto;
-  border-radius: 0.625rem;
-  background-color: oklch(1 0 0);
+  border-radius: var(--radius-lg, 10px);
+  background-color: var(--color-semantic-popover, #ffffff);
   padding: 0.25rem;
-  color: oklch(0.12 0 0);
-  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, oklch(0.12 0 0) 5%, transparent), 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
+  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, var(--color-semantic-sidebar-accent-foreground, #060606) 5%, transparent), 0 25px 50px -12px rgb(0 0 0 / 0.25);
   transition-duration: 100ms;
   animation-duration: 100ms;
 }
@@ -130,7 +130,7 @@ _variant: Actions_
   cursor: default;
   align-items: center;
   gap: calc(0.25rem * 2.5);
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   padding-inline: calc(0.25rem * 3);
   padding-block: calc(0.25rem * 2);
   font-size: 0.875rem;
@@ -148,7 +148,7 @@ _variant: Actions_
   margin-inline: calc(0.25rem * -1);
   margin-block: 0.25rem;
   height: 1px;
-  background-color: color-mix(in oklab, oklch(0.9 0 0) 50%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 50%, transparent);
 }
 ```
 
@@ -166,7 +166,7 @@ _variant: Options_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -177,7 +177,7 @@ _variant: Options_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.dropdown-menu, .dropdown-menu *)::after {
@@ -185,7 +185,7 @@ _variant: Options_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.dropdown-menu, .dropdown-menu *):where(button) {
@@ -206,12 +206,12 @@ _variant: Options_
 }
 
 .dropdown-menu {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -222,10 +222,10 @@ _variant: Options_
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-full, 9999px);
   border-style: solid;
   border-width: 1px;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   background-clip: padding-box;
   padding-inline: calc(0.25rem * 3);
   font-size: 0.875rem;
@@ -238,8 +238,8 @@ _variant: Options_
   outline-style: none;
   -webkit-user-select: none;
   user-select: none;
-  background-color: oklch(0.94 0 0);
-  color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-muted, #ebebeb);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
 }
 
 .dropdown-menu__icon {
@@ -257,11 +257,11 @@ _variant: Options_
   transform-origin: 0% 0px;
   overflow-x: hidden;
   overflow-y: auto;
-  border-radius: 0.625rem;
-  background-color: oklch(1 0 0);
+  border-radius: var(--radius-lg, 10px);
+  background-color: var(--color-semantic-popover, #ffffff);
   padding: 0.25rem;
-  color: oklch(0.12 0 0);
-  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, oklch(0.12 0 0) 5%, transparent), 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
+  box-shadow: 0 0 0 calc(1px + 0px) color-mix(in oklab, var(--color-semantic-sidebar-accent-foreground, #060606) 5%, transparent), 0 25px 50px -12px rgb(0 0 0 / 0.25);
   transition-duration: 100ms;
   animation-duration: 100ms;
 }
@@ -273,7 +273,7 @@ _variant: Options_
   flex-direction: column;
   align-items: flex-start;
   gap: 0.25rem;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-lg, 10px);
   padding-inline: calc(0.25rem * 3);
   padding-block: calc(0.25rem * 2);
   font-size: 0.875rem;
@@ -290,6 +290,6 @@ _variant: Options_
 .dropdown-menu__box-3 {
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
-  color: oklch(0.58 0 0);
+  color: var(--color-semantic-muted-foreground, #7a7a7a);
 }
 ```

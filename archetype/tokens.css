@@ -3,7 +3,7 @@
  * Import once, globally, then reference every value as var(--…).
  */
 :root {
-  --color-semantic-background: #fafafa; /* background */
+  --color-semantic-background: #ebdada; /* background */
   --color-semantic-foreground: #060606; /* foreground */
   --color-semantic-card: #ffffff; /* card */
   --color-semantic-popover: #ffffff; /* popover */

@@ -31,7 +31,7 @@ _variant: Inactive_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -42,7 +42,7 @@ _variant: Inactive_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.sidebar-history-item, .sidebar-history-item *)::after {
@@ -50,7 +50,7 @@ _variant: Inactive_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.sidebar-history-item, .sidebar-history-item *):where(ul) {
@@ -83,19 +83,19 @@ _variant: Inactive_
   display: flex;
   min-height: 0;
   width: 256px;
-  background-color: oklch(0.97 0 0);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: var(--color-semantic-sidebar, #f5f5f5);
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
 .sidebar-history-item__box {
   width: calc(0.25rem * 64);
-  background-color: oklch(0.97 0 0);
+  background-color: var(--color-semantic-sidebar, #f5f5f5);
   padding: calc(0.25rem * 2);
 }
 
@@ -130,7 +130,7 @@ _variant: Inactive_
   padding-right: calc(0.25rem * 8);
   background-color: transparent;
   font-weight: 400;
-  color: color-mix(in oklab, oklch(0.38 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-sidebar-foreground, #424242) 50%, transparent);
 }
 
 .sidebar-history-item__part {
@@ -148,7 +148,7 @@ _variant: Inactive_
   width: calc(0.25rem * 5);
   align-items: center;
   justify-content: center;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   padding: 0;
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   outline-style: none;
@@ -157,7 +157,7 @@ _variant: Inactive_
   transition-duration: 150ms;
   animation-duration: 150ms;
   opacity: 0%;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   top: calc(0.25rem * 1.5);
 }
 
@@ -207,7 +207,7 @@ _variant: Inactive · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -218,7 +218,7 @@ _variant: Inactive · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.sidebar-history-item, .sidebar-history-item *)::after {
@@ -226,7 +226,7 @@ _variant: Inactive · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.sidebar-history-item, .sidebar-history-item *):where(ul) {
@@ -259,19 +259,19 @@ _variant: Inactive · state: hover_
   display: flex;
   min-height: 0;
   width: 256px;
-  background-color: oklch(0.97 0 0);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: var(--color-semantic-sidebar, #f5f5f5);
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
 .sidebar-history-item__box {
   width: calc(0.25rem * 64);
-  background-color: oklch(0.97 0 0);
+  background-color: var(--color-semantic-sidebar, #f5f5f5);
   padding: calc(0.25rem * 2);
 }
 
@@ -306,7 +306,7 @@ _variant: Inactive · state: hover_
   padding-right: calc(0.25rem * 8);
   background-color: transparent;
   font-weight: 400;
-  color: color-mix(in oklab, oklch(0.38 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-sidebar-foreground, #424242) 50%, transparent);
 }
 
 .sidebar-history-item__part {
@@ -324,7 +324,7 @@ _variant: Inactive · state: hover_
   width: calc(0.25rem * 5);
   align-items: center;
   justify-content: center;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   padding: 0;
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   outline-style: none;
@@ -333,7 +333,7 @@ _variant: Inactive · state: hover_
   transition-duration: 150ms;
   animation-duration: 150ms;
   opacity: 100%;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   top: calc(0.25rem * 1.5);
 }
 
@@ -383,7 +383,7 @@ _variant: Active_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -394,7 +394,7 @@ _variant: Active_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.sidebar-history-item, .sidebar-history-item *)::after {
@@ -402,7 +402,7 @@ _variant: Active_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.sidebar-history-item, .sidebar-history-item *):where(ul) {
@@ -435,19 +435,19 @@ _variant: Active_
   display: flex;
   min-height: 0;
   width: 256px;
-  background-color: oklch(0.97 0 0);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: var(--color-semantic-sidebar, #f5f5f5);
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
 .sidebar-history-item__box {
   width: calc(0.25rem * 64);
-  background-color: oklch(0.97 0 0);
+  background-color: var(--color-semantic-sidebar, #f5f5f5);
   padding: calc(0.25rem * 2);
 }
 
@@ -484,9 +484,9 @@ _variant: Active_
   border-bottom-style: dashed;
   border-bottom-width: 1px;
   border-style: dashed;
-  border-color: color-mix(in oklab, oklch(0.38 0 0) 50%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-sidebar-foreground, #424242) 50%, transparent);
   font-weight: 500;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
 }
 
 .sidebar-history-item__part {
@@ -504,9 +504,9 @@ _variant: Active_
   width: calc(0.25rem * 5);
   align-items: center;
   justify-content: center;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   padding: 0;
-  color: color-mix(in oklab, oklch(0.38 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-sidebar-foreground, #424242) 50%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   outline-style: none;
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -562,7 +562,7 @@ _variant: Active · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -573,7 +573,7 @@ _variant: Active · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.sidebar-history-item, .sidebar-history-item *)::after {
@@ -581,7 +581,7 @@ _variant: Active · state: hover_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.sidebar-history-item, .sidebar-history-item *):where(ul) {
@@ -614,19 +614,19 @@ _variant: Active · state: hover_
   display: flex;
   min-height: 0;
   width: 256px;
-  background-color: oklch(0.97 0 0);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: var(--color-semantic-sidebar, #f5f5f5);
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 
 .sidebar-history-item__box {
   width: calc(0.25rem * 64);
-  background-color: oklch(0.97 0 0);
+  background-color: var(--color-semantic-sidebar, #f5f5f5);
   padding: calc(0.25rem * 2);
 }
 
@@ -663,9 +663,9 @@ _variant: Active · state: hover_
   border-bottom-style: dashed;
   border-bottom-width: 1px;
   border-style: dashed;
-  border-color: color-mix(in oklab, oklch(0.38 0 0) 50%, transparent);
+  border-color: color-mix(in oklab, var(--color-semantic-sidebar-foreground, #424242) 50%, transparent);
   font-weight: 500;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
 }
 
 .sidebar-history-item__part {
@@ -683,9 +683,9 @@ _variant: Active · state: hover_
   width: calc(0.25rem * 5);
   align-items: center;
   justify-content: center;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: var(--radius-md, 8px);
   padding: 0;
-  color: color-mix(in oklab, oklch(0.38 0 0) 50%, transparent);
+  color: color-mix(in oklab, var(--color-semantic-sidebar-foreground, #424242) 50%, transparent);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   outline-style: none;
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;

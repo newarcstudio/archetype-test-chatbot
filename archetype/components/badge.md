@@ -24,7 +24,7 @@ _variant: Default_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -35,7 +35,7 @@ _variant: Default_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.badge, .badge *)::after {
@@ -43,7 +43,7 @@ _variant: Default_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 .badge {
@@ -59,18 +59,18 @@ _variant: Default_
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.12 0 0);
+  background-color: var(--color-semantic-sidebar-accent-foreground, #060606);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.985 0 0);
+  color: var(--color-semantic-primary-foreground, #fafafa);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: normal;
   -webkit-font-smoothing: antialiased;
 }
@@ -90,7 +90,7 @@ _variant: Secondary_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -101,7 +101,7 @@ _variant: Secondary_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.badge, .badge *)::after {
@@ -109,7 +109,7 @@ _variant: Secondary_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 .badge {
@@ -125,18 +125,18 @@ _variant: Secondary_
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: oklch(0.965 0 0);
+  background-color: var(--color-semantic-accent, #f3f3f3);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.38 0 0);
+  color: var(--color-semantic-sidebar-foreground, #424242);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: normal;
   -webkit-font-smoothing: antialiased;
 }
@@ -156,7 +156,7 @@ _variant: Outline_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -167,7 +167,7 @@ _variant: Outline_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.badge, .badge *)::after {
@@ -175,7 +175,7 @@ _variant: Outline_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 .badge {
@@ -190,19 +190,19 @@ _variant: Outline_
   border-radius: 2rem;
   border-style: solid;
   border-width: 1px;
-  border-color: oklch(0.9 0 0);
-  background-color: color-mix(in oklab, oklch(0.9 0 0) 30%, transparent);
+  border-color: var(--color-semantic-input, #dedede);
+  background-color: color-mix(in oklab, var(--color-semantic-input, #dedede) 30%, transparent);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, #060606);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: normal;
   -webkit-font-smoothing: antialiased;
 }
@@ -222,7 +222,7 @@ _variant: Destructive_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -233,7 +233,7 @@ _variant: Destructive_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.badge, .badge *)::after {
@@ -241,7 +241,7 @@ _variant: Destructive_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 .badge {
@@ -257,18 +257,18 @@ _variant: Destructive_
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: color-mix(in oklab, oklch(0.55 0.15 25) 10%, transparent);
+  background-color: color-mix(in oklab, var(--color-semantic-destructive, #b94642) 10%, transparent);
   padding-inline: calc(0.25rem * 2);
   padding-block: calc(0.25rem * 0.5);
   font-size: 0.75rem;
   line-height: calc(1 / 0.75);
   font-weight: 500;
   white-space: nowrap;
-  color: oklch(0.55 0.15 25);
+  color: var(--color-semantic-destructive, #b94642);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: normal;
   -webkit-font-smoothing: antialiased;
 }
@@ -288,7 +288,7 @@ _variant: Ghost_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
   box-shadow: 0 0 0 calc(0px + 0px) currentcolor;
   scrollbar-color: oklch(0 0 0 / 0.12) transparent;
   scrollbar-width: thin;
@@ -299,7 +299,7 @@ _variant: Ghost_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 :where(.badge, .badge *)::after {
@@ -307,7 +307,7 @@ _variant: Ghost_
   margin: 0;
   padding: 0;
   border: 0 solid;
-  border-color: oklch(0.9 0 0);
+  border-color: var(--color-semantic-input, #dedede);
 }
 
 .badge {
@@ -332,9 +332,9 @@ _variant: Ghost_
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-ui-sans-serif, ui-sans-serif), system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: normal;
-  color: oklch(0.12 0 0);
+  color: var(--color-semantic-sidebar-accent-foreground, rgb(6, 6, 6));
   -webkit-font-smoothing: antialiased;
 }
 ```
