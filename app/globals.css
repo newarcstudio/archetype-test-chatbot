@@ -1,4 +1,5 @@
-@import "tailwindcss";
+@import "../archetype/tailwind.css";
+@source not "../archetype";
 @import "katex/dist/katex.min.css";
 
 @source "../node_modules/streamdown/dist/index.js";
@@ -9,10 +10,6 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -47,38 +44,38 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(0.985 0 0);
-  --foreground: oklch(0.12 0 0);
-  --card: oklch(1 0 0);
+  --radius: var(--radius-lg);
+  --background: var(--color-semantic-background);
+  --foreground: var(--color-semantic-foreground);
+  --card: var(--color-semantic-card);
   --card-foreground: oklch(0.12 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.12 0 0);
-  --primary: oklch(0.12 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.965 0 0);
-  --secondary-foreground: oklch(0.38 0 0);
-  --muted: oklch(0.94 0 0);
-  --muted-foreground: oklch(0.58 0 0);
-  --accent: oklch(0.965 0 0);
-  --accent-foreground: oklch(0.12 0 0);
-  --destructive: oklch(0.55 0.15 25);
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.9 0 0);
-  --ring: oklch(0.5 0 0);
+  --popover: var(--color-semantic-popover);
+  --popover-foreground: var(--color-semantic-popover-foreground);
+  --primary: var(--color-semantic-primary);
+  --primary-foreground: var(--color-semantic-primary-foreground);
+  --secondary: var(--color-semantic-secondary);
+  --secondary-foreground: var(--color-semantic-secondary-foreground);
+  --muted: var(--color-semantic-muted);
+  --muted-foreground: var(--color-semantic-muted-foreground);
+  --accent: var(--color-semantic-accent);
+  --accent-foreground: var(--color-semantic-accent-foreground);
+  --destructive: var(--color-semantic-destructive);
+  --border: var(--color-semantic-border);
+  --input: var(--color-semantic-input);
+  --ring: var(--color-semantic-ring);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.97 0 0);
-  --sidebar-foreground: oklch(0.38 0 0);
+  --sidebar: var(--color-semantic-sidebar);
+  --sidebar-foreground: var(--color-semantic-sidebar-foreground);
   --sidebar-primary: oklch(0.12 0 0);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.12 0 0 / 0.06);
-  --sidebar-accent-foreground: oklch(0.12 0 0);
-  --sidebar-border: oklch(0.88 0 0);
-  --sidebar-ring: oklch(0.5 0 0);
+  --sidebar-accent: var(--color-semantic-sidebar-accent);
+  --sidebar-accent-foreground: var(--color-semantic-sidebar-accent-foreground);
+  --sidebar-border: var(--color-semantic-sidebar-border);
+  --sidebar-ring: var(--color-semantic-sidebar-ring);
 
   --shadow-card: 0 1px 3px oklch(0 0 0 / 0.05), 0 1px 1px oklch(0 0 0 / 0.03);
   --shadow-float:

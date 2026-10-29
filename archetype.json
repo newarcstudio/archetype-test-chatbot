@@ -1,5 +1,9 @@
 {
   "components": {
-    "css": ["app/globals.css"]
-  }
+    "css": [
+      "app/globals.css"
+    ]
+  },
+  "url": "https://www.heyarchetype.com",
+  "brand": "github-test"
 }
